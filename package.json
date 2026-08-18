@@ -1,0 +1,39 @@
+{
+  "name": "dsh-amyth",
+  "version": "0.1.0",
+  "description": "Unofficial non-commercial Amis (Wuthering Waves) neon-mecha skin for DeepSeek Harness Web",
+  "private": true,
+  "author": "AmisTheme",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./skin.json": "./skin.json",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "skin.json",
+    "assets",
+    "preview/cover.jpg",
+    "LICENSE",
+    "NOTICE",
+    "README.md"
+  ]
+}
