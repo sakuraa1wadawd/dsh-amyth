@@ -1,0 +1,27 @@
+{
+  "id": "amyth",
+  "name": "爱弥斯 · 电子幽灵",
+  "nameEn": "Amis · Electronic Ghost",
+  "author": "AmisTheme",
+  "tagline": "粉发电子幽灵、霓虹机娘与原生侧栏",
+  "description": "面向 DeepSeek Harness Web 的非官方、非商业《鸣潮》爱弥斯同人皮肤。以深空底、品红粉与霓虹青重塑首页与对话界面，在右侧展示爱弥斯半身立绘，并保留 DSH 原生侧栏。",
+  "tags": [
+    "anime",
+    "wuthering-waves",
+    "amis",
+    "mecha",
+    "neon",
+    "pink"
+  ],
+  "accent": "#ff4d9e",
+  "bodyAttr": "data-dsh-amyth",
+  "package": "dsh-amyth",
+  "wiring": {
+    "id": "ui-skin-amyth",
+    "bundleWired": false
+  },
+  "preview": {
+    "cover": "preview/cover.jpg"
+  },
+  "order": 5
+}
