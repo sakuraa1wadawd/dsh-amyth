@@ -53,6 +53,30 @@ dsh-amyth/
 └── preview/cover.jpg       # 预览图
 ```
 
+## 人格预设（让 AI 以爱弥斯人格聊天）
+
+本仓库额外提供了爱弥斯的人格设定，让 AI 以《鸣潮》角色爱弥斯（小爱同学）的身份、语气与你聊天。
+
+- `persona.md` —— 完整人格文本（可自行粘贴到任意预设的 persona 配置）
+- `preset/agent.cordis.yml` + `preset/preset.yml` —— 现成的「爱弥斯」agent 预设
+
+### 安装人格预设
+
+1. 把 `preset/` 目录复制到你的用户预设目录：
+
+```powershell
+# Windows（PowerShell）
+Copy-Item .\preset $env:USERPROFILE\.dsh\.agent-presets\aemeath -Recurse
+
+# macOS / Linux
+mkdir -p ~/.dsh/.agent-presets/aemeath
+cp preset/* ~/.dsh/.agent-presets/aemeath/
+```
+
+2. 重新启动 `npx @deepseek-ai/dsh web`，新建会话时在预设选择器里选「爱弥斯」即可。
+
+> 说明：皮肤（界面外观）与人格（聊天身份）是两部分，需分别安装。皮肤是 `dsh-amyth` 插件，人格是 `aemeath` 预设。
+
 ## 壁纸下载
 
 原图在 `wallpapers/` 目录，可直接下载使用：
